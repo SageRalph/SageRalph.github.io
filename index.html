@@ -15,12 +15,12 @@
             <ol id="tabs">
             
                 <li onclick="tab('about')">
-                    <h3 id="navabout" class="selected">About</h3>
+                    <h3 id="navabout" class="selected"><a href="#tababout">About</a></h3>
                 </li>
             
                 <li onclick="tab('projects')">
-                    <h3 id="navprojects">Projects</h3>
-                    <ol onclick="tab('projects')">
+                    <h3 id="navprojects"><a href="#tabprojects">Projects</a></h3>
+                    <ol>
                         <li><a href="#armas">       ARMAS               </a></li>
                         <li><a href="#earth">       WebGL 3D Earth      </a></li>
                         <li><a href="#webshop">     Web Shop            </a></li>
@@ -36,7 +36,7 @@
                 </li>
                 
                 <li onclick="tab('blog')">
-                    <h3 id="navblog">Blog</h3>
+                    <h3 id="navblog"><a href="#tabblog">Blog</a></h3>
                     <ol id="bloglinks">
                         <li><a>Coming soon!</a></li>
                     </ol>
@@ -48,23 +48,18 @@
         <section id="content">
         
             <section id="tababout" class="visibleTab">
-                <img src="media/aboutbanner.png" alt="About Banner" class="banner">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Nam tincidunt vestibulum scelerisque. Pellentesque pretium 
-                    tortor libero, in sodales nulla fermentum ornare. Cras eget 
-                    mattis mauris. Donec rhoncus turpis vel mauris lobortis 
-                    ornare. Proin maximus nulla mauris, vitae volutpat massa 
-                    pulvinar id. Cras sit amet lectus libero. Fusce lectus 
-                    enim, tempus.
-                </p>
-                <p>
-                    Aenean eu euismod mi, dignissim egestas est. Proin et posuere 
-                    enim. Vestibulum sed blandit purus. Pellentesque ultrices est 
-                    a nunc dictum pretium. Suspendisse cursus sapien non ligula 
-                    scelerisque dapibus. Donec ut euismod mi. Duis vestibulum 
-                    auctor eros.
-                </p>
+            
+                <img src="media/underconstruction.jpg" alt="About Banner" class="banner">
+                <p>This site is currently under construction.</p>
+                <p><a onclick="tab('projects')" href="#tabprojects">Check out the projects page!</a></p>
+
+                <h3>Contact</h3>
+                <p>Want to find out more, give feedback, or discuss an opportunity?</p>
+                <p>Email me at <a href="mailto:David.M.L.Ralph@gmail.com">David.M.L.Ralph@gmail.com</a></p>
+                
+                <h3>Misc</h3>
+                <p><a href="media/David Ralph CV.pdf">Take a look at my CV</a></p>
+                
             </section>
         
             <section id="tabblog" class="hiddenTab">
@@ -96,7 +91,9 @@
                     <p>
                         More information about the project will be added here in future.
                     </p>
-                    <a href="http://davidralph.ddns.net/ARMAS%20Prototype/Prototype1">View the prototype here</a>
+                    <ul>
+                        <li><a href="http://davidralph.ddns.net/ARMAS%20Prototype/Prototype1">View the prototype here</a></li>
+                    </ul>
                 </article>
                 
                 <article>
@@ -110,7 +107,9 @@
                     <p>
                         The scene features full camera controls and orbital controls for the satellite.
                     </p>
-                    <a href="http://davidralph.ddns.net/WebGL 3D Earth">View here</a>
+                    <ul>
+                        <li><a href="http://davidralph.ddns.net/WebGL 3D Earth">View here</a></li>
+                    </ul>
                 </article>
                 
                 <article>
@@ -270,6 +269,9 @@
                         A number of stopping conditions are supported, including 'known best' and max-generations.
                         The program utilises a thread pool with an optional number of workers.
                     </p>
+                    <ul>
+                        <li><a href="https://github.com/DavidRalph/GPGA">View source code on GitHub</a></li>
+                    </ul>
                 </article>
                 
                 <article>
