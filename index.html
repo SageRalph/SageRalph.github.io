@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>David Ralph Portfolio</title>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" sizes="32x32" href="media/favicon.png">
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="background"></div>
+
+        <nav>
+            <h1>David Ralph Portfolio</h1>
+            <ol id="tabs">
+            
+                <li onclick="tab('about')">
+                    <h3 id="navabout" class="selected">About</h3>
+                </li>
+            
+                <li onclick="tab('projects')">
+                    <h3 id="navprojects">Projects</h3>
+                    <ol onclick="tab('projects')">
+                        <li><a href="#armas">       ARMAS           </a></li>
+                        <li><a href="#earth">       WebGL 3D Earth  </a></li>
+                        <li><a href="#webshop">     Web Shop        </a></li>
+                        <li><a href="#floopdemo">   Floop           </a></li>
+                        <li><a href="#webworkshop"> Web Workshop    </a></li>
+                        <li><a href="#upgraph">     UpGraph         </a></li>
+                        <li><a href="#calculator">  Grade Calculator</a></li>
+                        <li><a href="#mdgpu">       MDGPU           </a></li>
+                        <li><a href="#pybirds">     Angry Pythons   </a></li>
+                        <li><a href="#roguebuttons">Rogue Buttons   </a></li>
+                    </ol>
+                </li>
+                
+                <li onclick="tab('blog')">
+                    <h3 id="navblog">Blog</h3>
+                    <ol id="bloglinks">
+                        <li><a>Coming soon!</a></li>
+                    </ol>
+                </li>
+            
+            </ol>
+        </nav>
+        
+        <section id="content">
+        
+            <section id="tababout" class="visibleTab">
+                <img src="media/aboutbanner.png" alt="About Banner" class="banner">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Nam tincidunt vestibulum scelerisque. Pellentesque pretium 
+                    tortor libero, in sodales nulla fermentum ornare. Cras eget 
+                    mattis mauris. Donec rhoncus turpis vel mauris lobortis 
+                    ornare. Proin maximus nulla mauris, vitae volutpat massa 
+                    pulvinar id. Cras sit amet lectus libero. Fusce lectus 
+                    enim, tempus.
+                </p>
+                <p>
+                    Aenean eu euismod mi, dignissim egestas est. Proin et posuere 
+                    enim. Vestibulum sed blandit purus. Pellentesque ultrices est 
+                    a nunc dictum pretium. Suspendisse cursus sapien non ligula 
+                    scelerisque dapibus. Donec ut euismod mi. Duis vestibulum 
+                    auctor eros.
+                </p>
+            </section>
+        
+            <section id="tabblog" class="hiddenTab">
+                <h1>David's Blog</h1>
+                <p>Coming Soon!</p>
+            </section>
+
+            <section id="tabprojects" class="hiddenTab">
+                
+                <article>
+                    <a name="armas"></a>
+                    <h1>ARMAS (Augmented Reality Mobile Asbestos Surveyor)</h1>
+                    <img src="media/armas.png" alt="Project Preview" class="preview">
+                    <p>
+                        ARMAS is an Augmented Reality Mobile Asbestos Survey tool 
+                        created in collaboration with Hampshire Scientific Services.
+                    </p>
+                    <p>
+                        This was created for my dissertation project for my undergraduate degree at the University of Portsmouth.
+                    </p>
+                    <p>
+                        The app is built for Android mobile devices, and is optimised for use on both phones and tablets. 
+                        It utilises Wikitude to provide an augmented reality interface for highlighting known asbestos locations.
+                    </p>
+                    <p>
+                        The app was demonstrated at the university's student conference March 2016, 
+                        and is now being taken forward by a new group of students.
+                    </p>
+                    <p>
+                        More information about the project will be added here in future.
+                    </p>
+                    <a href="http://davidralph.ddns.net/ARMAS%20Prototype/Prototype1">View the prototype here</a>
+                </article>
+                
+                <article>
+                    <a name="earth"></a>
+                    <h1>WebGL 3D Earth</h1>
+                    <img src="media/earth.gif" alt="Project Preview" class="preview">
+                    <p>
+                        This project demonstrates use of WebGL to render a 3D Earth model with an orbiting satellite, 
+                        without the use of any libraries (other than WebGL).
+                    </p>
+                    <p>
+                        The scene features full camera controls and orbital controls for the satellite.
+                    </p>
+                    <a href="http://davidralph.ddns.net/WebGL 3D Earth">View here</a>
+                </article>
+                
+                <article>
+                    <a name="webshop"></a>
+                    <h1>Web Shop</h1>
+                    <img src="media/webshop.png" alt="Project Preview" class="preview">
+                    <p>
+                        This project is a RESTful PHP and HTML5/JavaScript online shop, 
+                        with seperate CMS (content managment), Customer, and Admin pages, as well as an extensive RESTful API.
+                    </p>
+                    <p>
+                        The site contains no functional purchase / transaction controls and is intended as a demo only. 
+                    </p>
+                    <ul>
+                        <li><a href="http://davidralph.ddns.net/WebShopDemo">View live version here</a></li>
+                        <li><a href="https://github.com/DavidRalph/WebShop">View source code on GitHub</a></li>
+                    </ul>
+                </article>
+                
+                <article>
+                    <a name="floopdemo"></a>
+                    <h1>Floop</h1>
+                    <img src="media/floop.png" alt="Project Preview" class="preview">
+                    <p>
+                        Floop is an information storage website, to help people organise their food storage, 
+                        which movies they want to watch, and contact details. 
+                        The site is intended to streamline many of the common functions required in shared accommodation
+                    </p>
+                    <p>
+                        Floop is a RESTful PHP and HTML5/JavaScript website, with an extensive RESTful API.
+                    </p>
+                    <p>
+                        The site has been extensively used in practice (the first launch being in 2014).
+                        A demo version with a separate database is linked below.
+                    </p>
+                    <ul>
+                        <li><a href="http://davidralph.ddns.net/floopdemo">View demo version here</a></li>
+                        <li><a href="https://github.com/DavidRalph/floop">View source code on GitHub</a></li>
+                    </ul>
+                </article>
+                
+                <article>
+                    <a name="webworkshop"></a>
+                    <h1>Web Workshop Blog</h1>
+                    <img src="media/webworkshop.png" alt="Project Preview" class="preview">
+                    <p>
+                        This is a example of a simple blog-like website, intended for educational purposes.
+                    </p>
+                    <p>
+                        It was created for the University of Portsmouth IT Society's Web Workshop in 2015.
+                    </p>
+                    <p>
+                        The blog features a procedurally generated banner using SVG and a JavaScript powered tag search.
+                    </p>
+                    <ul>
+                        <li><a href="http://davidralph.ddns.net/web-workshop-blog">View here</a></li>
+                        <li><a href="https://github.com/uopcs/web-workshop-blog/tree/With-added-JavaScript">View source code on GitHub</a></li>
+                    </ul>
+                </article>
+                
+                <article>
+                    <a name="upgraph"></a>
+                    <h1>UpGraph</h1>
+                    <img src="media/upgraph.png" alt="Project Preview" class="preview">
+                    <p>
+                        UpGraph will periodically crawl the UPSU (University of Portsmouth Students Union) 
+                        website to generate a list of societies and current society membership counts. 
+                        By default, this is done every midnight.
+                    </p>
+                    <p>
+                        UpGraph also serves a single page public site featuring an interactive graph of this 
+                        information and controls for toggling each society.
+                    </p>
+                    <p>
+                        This site is an extension of the UpBot web crawler originally created by Louis Capitanchik.
+                    </p>
+                    <p>
+                        UpGraph is written in Node.JS and HTML5/JavaScript. The charts are rendered using amcharts.
+                    </p>
+                    <ul>
+                        <li><a href="http://davidralph.ddns.net/upgraph">View here</a></li>
+                        <li><a href="https://github.com/DavidRalph/UpGraph">View source code on GitHub</a></li>
+                    </ul>
+                </article>
+                
+                
+                <article>
+                    <a name="calculator"></a>
+                    <h1>MEng Grade Calculator</h1>
+                    <img src="media/calculator.png" alt="Project Preview" class="preview">
+                    <p>
+                        This Java EE web application can be used to calculate the degree classification 
+                        that would be awarded to an MEng student at the University of Portsmouth based on a set of unit grades.
+                    </p>
+                    <p>
+                        I created this as while grade calculators exist for most other courses, there was not yet one for MEng courses.
+                    </p>
+                    <ul>
+                        <li><a href="http://davidralph.ddns.net/MEng_CS_Calculator/">View here</a></li>
+                    </ul>
+                </article>
+                
+                <article>
+                    <a name="mdgpu"></a>
+                    <h1>MDGPU (Molecular Dynamics via GPU)</h1>
+                    <img src="media/mdgpu.png" alt="Project Preview" class="preview">
+                    <p>
+                        This Java application uses APARAPI to perform molecular dynamics simulation with hardware acceleration.
+                        The GPU is utilised to calculate Lennard-Jones potential for particles with one GPU thread per particle.
+                    </p>
+                    <p>
+                        The physics code is adapted from a single threaded 
+                        <a href="http://physics.weber.edu/schroeder/software/mdapplet.html">implementation by Dan Schroeder</a>.
+                    </p>
+                    <ul>
+                        <li><a href="https://github.com/DavidRalph/MDGPU">View source code on GitHub</a></li>
+                    </ul>
+                </article>
+                
+                <article>
+                    <a name="pybirds"></a>
+                    <h1>Angry Pythons</h1>
+                    <img src="media/pybirds.png" alt="Project Preview" class="preview">
+                    <p>
+                        Originally an attempt to recreate Angry Birds in Python. 
+                        The game models projectile motion using SUVAT and features procedurally generated levels.
+                    </p>
+                    <p>
+                        While originally created as a side-project in 2013, 
+                        it was later re-purposed for use as a teaching resource / example program for the 
+                        IT Society Python Games Development workshop.
+                    </p>
+                    <p>
+                        Graphics are rendered using 
+                        <a href="http://mcsp.wartburg.edu/zelle/python/graphics.py">Simple object oriented graphics library</a> by John Zelle
+                    </p>
+                    <ul>
+                        <li><a href="https://github.com/TheITSoc/Python-Games-Workshop-AngryPythons">View source code on GitHub</a></li>
+                    </ul>
+                </article>
+                
+                <article>
+                    <a name="roguebuttons"></a>
+                    <h1>Rogue Buttons</h1>
+                    <img src="media/roguebuttons.png" alt="Project Preview" class="preview">
+                    <p>
+                        An attempt to make a simple Rogue-like game using VB Windows forms. 
+                        The game features procedural building and creature placement, an item system, 
+                        and a detailed tile description system.
+                    </p>
+                    <p>
+                        Note: This is a very old project form my first year of college and as such is quite poorly implemented.
+                        The project is not a serious attempt at making a functional game, but more of a proof of concept.
+                    </p>
+                    <ul>
+                        <li><a href="https://github.com/DavidRalph/RougeButtons">View source code on GitHub</a></li>
+                    </ul>
+                </article>
+                
+            </section>
+
+        </section>
+    </body>
+</html>
