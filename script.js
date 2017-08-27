@@ -1,13 +1,3 @@
-
-
-window.onload = function () {
-    // Enable javascript tabs
-    Array.from(document.getElementsByClassName("secondaryTab")).forEach(
-        function (tab) {
-            tab.className = 'hiddenTab';
-        });
-}
-
 /**
  * Sets a single tab to be visible.
  */

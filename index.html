@@ -4,9 +4,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>David Ralph Portfolio</title>
         <meta charset="utf-8">
-        <!-- <link rel="shortcut icon" sizes="32x32" href="media/favicon.png"> -->
-        <link rel="stylesheet" href="style.css" type="text/css"/>
         <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <!-- Don't hide tabs if JavaScript is disabled -->
+        <noscript><style> .hiddenTab { display: block } </style></noscript>
     </head>
     <body>
         <div id="background"></div>
@@ -89,7 +90,7 @@
                 
             </section>
 
-            <section id="tabprojects" class="secondaryTab">
+            <section id="tabprojects" class="hiddenTab">
                 
                 <a name="armas"></a>
                 <article>
@@ -318,7 +319,7 @@
                 
             </section>
 
-            <section id="tabblog" class="secondaryTab">
+            <section id="tabblog" class="hiddenTab">
                 <h1>David's Blog</h1>
                 <p>Coming Soon!</p>
             </section>
