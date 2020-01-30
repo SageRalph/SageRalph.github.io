@@ -23,6 +23,7 @@
                 <li onclick="tab('projects')">
                     <h3 id="navprojects"><a href="#tabprojects">Projects</a></h3>
                     <ol>
+                        <li><a href="#tsrextended"> TSR (Extended)      </a></li>
                         <li><a href="#tsr">         TSR                 </a></li>
                         <li><a href="#mendeley">    Search Mendeley     </a></li>
                         <li><a href="#resteasy">    RESTeasy            </a></li>
@@ -120,10 +121,85 @@
 
             <section id="tabprojects" class="hiddenTab">
 
+                <a name="tsrextended"></a>
+                <article>
+                    <h1>Recommendations from Cold Starts in Big Data (Extended Edition)</h1>
+                    <img src="media/tsr.png" alt="Project Preview" class="preview">                    
+                    <h2>Abstract</h2>
+                    <p>
+                        This paper examines the challenging problem of new user cold starts in subset labelled and extremely 
+                        sparsely labelled big data. We introduce a new Isle of Wight Supply Chain (IWSC) dataset demonstrating 
+                        these characteristics. We also introduce a new technique addressing these challenges, the Transitive 
+                        Semantic Relationships (TSR) model, which infers potential relationships from user and item text content 
+                        and few labelled examples. 
+                    </p>
+                    <p>
+                        We perform both implicit and explicit evaluation of TSR as a recommender system and from new user cold 
+                        starts we achieve a hit-rate@10 of 77% on a collection of 630 items with only 376 supply-chain consumer 
+                        labels, and 67% with only 142 supply-chain supplier labels, demonstrating a high level of performance 
+                        even with extremely few labels in challenging cold-start scenarios. 
+                    </p>
+                    <p>
+                        TSR is suitable for any dataset featuring few labels and user and item content, where similarity of content 
+                        indicates similar relationship forming capability. TSR can be used as a standalone recommender system 
+                        or to complement existing high-performance recommender models that require more labels or do not support 
+                        cold starts.
+                    </p>
+                    <h2>Publication Details</h2>
+                    <p>Published in Springer Computing 2020</p>
+                    <p>DOI: 10.1007/s00607-020-00792-y</p>
+                    <ul class="links">
+                        <li><a href="https://doi.org/10.1007/s00607-020-00792-y">Read full paper online for free</a></li>
+                        <li><a href="https://github.com/DavidRalph/TSR-Public">View source code on GitHub</a></li>
+                    </ul>
+                    <h2>Citation</h2>
+                    <details>
+                        <summary>Harvard APA 6th</summary>
+                        <pre>
+Ralph, D., Li, Y., Wills, G. et al. 
+Recommendations from cold starts in big data. Computing (2020). 
+https://doi.org/10.1007/s00607-020-00792-y</pre>
+                    </details>
+                    <details>
+                        <summary>BibTeX</summary>
+                        <pre>
+@Article{Ralph2020,
+author={Ralph, David
+and Li, Yunjia
+and Wills, Gary
+and Green, Nicolas G.},
+title={Recommendations from cold starts in big data},
+journal={Computing},
+year={2020},
+issn={1436-5057},
+doi={10.1007/s00607-020-00792-y},
+url={https://doi.org/10.1007/s00607-020-00792-y}
+}</pre>
+                    </details>
+                        
+                    <details>
+                        <summary>RIS</summary>
+                        <pre>
+TY  - JOUR
+AU  - Ralph, David
+AU  - Li, Yunjia
+AU  - Wills, Gary
+AU  - Green, Nicolas G.
+PY  - 2020
+DA  - 2020/01/29
+TI  - Recommendations from cold starts in big data
+JO  - Computing
+SN  - 1436-5057
+UR  - https://doi.org/10.1007/s00607-020-00792-y
+DO  - 10.1007/s00607-020-00792-y
+ID  - Ralph2020
+ER  - </pre>
+                    </details>
+                </article>
+
                 <a name="tsr"></a>
                 <article>
-                    <h1>Recommendations from Cold Starts in Big Data</h1>
-                    <img src="media/tsr.png" alt="Project Preview" class="preview">                    
+                    <h1>Recommendations from Cold Starts in Big Data</h1>                
                     <h2>Abstract</h2>
                     <p>
                         In this paper, we introduce Transitive Semantic Relationships (TSR), a new technique for ranking 
