@@ -163,7 +163,24 @@ nav h3{
    margin-top: 0.5em;
 }
 
+.logos a{
+    height: 8rem;
+    display: inline-block;
+    margin: 0.5rem 2rem 0.5rem 0;
+}
 
+.logos a img{
+    height: 100%;
+    margin: auto;
+}
+
+.logos li{
+    display: inline-block;
+}
+
+.circle{
+    border-radius: 50%;
+}
 
 h1,h2,h3{
     margin:0 0 0.2em 0;
