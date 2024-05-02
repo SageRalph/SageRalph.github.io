@@ -133,8 +133,6 @@ nav ol li a.selected {
 
 #content p {
   font-size: 1.1em;
-  margin-top: 0.8em;
-  margin-bottom: 0.8em;
 }
 
 #content > section > p {
@@ -150,6 +148,15 @@ nav ol li a.selected {
 #content details > summary {
   cursor: pointer;
   margin: 0.5em;
+}
+
+.bullet-table {
+  width: 100%;
+  font-weight: bold;
+}
+
+.bullet-table td {
+  padding: 0.5em 2rem;
 }
 
 .links {
@@ -175,7 +182,7 @@ nav ol li a.selected {
 }
 
 .logos .wide {
-    width: 18rem;
+  width: 18rem;
 }
 
 .logos li {
